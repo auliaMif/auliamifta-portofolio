@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+/* header */
+.jumbotron {
+  position: sticky;
+  font-size: 20px;
+  padding: 30px;
+  background-color: #00c8eb;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.jumbotron ul {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+}
+
+.jumbotron ul li {
+  font-weight: 700;
+}
+
+.jumbotron a {
+  font-size: 50px;
+  color: white;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.jumbotron a:hover {
+  color: #186282;
+  border-bottom: 1px solid #11a3e2;
+}
+
+/* NAVBAR */
+nav {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #fcfcfc;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+  color: #1E90FF;
+  font-weight: bold;
+  margin-left: 18px;
+}
+  
+nav ul {
+ list-style-type: none;
+ display: flex;
+ gap: 30px;
+}
+  
+nav ul li {
+ font-weight: bold;
+}
+
+nav a {
+ color: #1E90FF;
+ transition: 0.3s;
+ text-decoration: none;
+}
+
+nav a:hover {
+  color: #186282;
+  border-bottom: 1px solid #11a3e2;
+}
+
+/* Main */
+main {
+  padding: 30px;
+  display: flex;
+  gap: 32px;
+}
+
+.card {
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* aside */
+.profile header {
+  text-align: center;
+    
+} 
+
+.profile img {
+    width: 175px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.skills {
+  margin-top: 30px;
+} 
+
+
+.skills h2{
+  margin-bottom: 20px;
+}
+
+.skills img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    position: relative;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+/* content */
+#content {
+    flex: 3.5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+}
+
+h2{
+  color: #00BFFF;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+p {
+  text-align: center;
+  margin: 10px;
+}
+
+/* Galeri */
+.project {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 2px rgba(0,0,0,0.1);
+  padding: 5px;
+  float: left;
+  margin: 12px;
+}
+  
+.project img {
+  padding: 10px;
+  width: 350px;
+}
+
+.description {
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  color:#fff;
+  background:silver;
+}
+
+.description:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;;
+}
+
+/* footer */
+footer {
+  padding: 20px;
+  color: #fff;
+  background-color: #00a2c6;
+}
+
+/* medua screen */
+@media screen and (max-width: 1200px) {
+  main {
+      flex-flow: column nowrap;
+  }
+  main aside {
+      align-self: inherit;
+  }
+
+  .profile table {
+    text-align: center;
+  } 
+}
+
+@media screen and (max-width: 768px) {
+  .jumbotron {
+    justify-content: space-between;
+  }
+
+  nav ul {
+      justify-content: center;
+  }
+   
+  main aside {
+      align-self: stretch;
+  }
+
+}
+
